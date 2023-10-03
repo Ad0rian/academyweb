@@ -1,0 +1,86 @@
+
+header {
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 30px;
+    font-weight:900;
+    
+}
+
+.title {
+    text-align: left;
+}
+
+header li {
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight:900;
+    
+}
+
+header .center {
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 1053px) {
+    header .center{
+        display:none;
+    }
+
+}
+
+@media only screen and (min-width: 1053px) {
+    .buttonMenu {
+        display:none
+    }
+
+}
+
+
+/*____________Lateral Menu ________________*/
+
+.lateralMenu{
+    position:fixed;
+    width: 100%;
+    height:100%;
+    background-color: white;
+    left:-100%
+}
+
+.lateralMenuClosed {
+    animation:slideClosed 0.25s ease-in;
+    left:-100%
+}
+
+.lateralMenuOpen {
+    animation:slideOpen 0.25s ease-in;
+    left:0%
+}
+  
+  @keyframes slideClosed {
+    0% {
+        left:0%
+    }
+    100% {
+        left:-100%
+    }
+  }
+
+  @keyframes slideOpen {
+    0% {
+        left:-100%
+    }
+    100% {
+        left:0%
+    }
+  }

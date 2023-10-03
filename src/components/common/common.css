@@ -1,0 +1,104 @@
+/*_____BG____*/
+
+.bgHome {
+  background-image: linear-gradient(-60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
+  bottom:0;
+  opacity:.5;
+  position:absolute;
+  width:100vw;
+  right:-100%;
+  top:0;
+  z-index:-1;
+  height:50%;
+
+}
+.bgAbout {
+  background-image: linear-gradient(60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
+  bottom:0;
+ 
+  opacity:.5;
+  position:absolute;
+  top:50%;
+  height:50%;
+  right:100%;
+  width:100vw;
+  z-index:-1;
+}
+
+
+.appearingBgHome {
+  right:0%;
+  animation-duration: 0.5S ;
+  animation-name: image-inHome;
+
+}
+
+@keyframes image-inHome {
+  0%{
+    right:-100%;
+  }
+  100% {
+    right:0%;
+  }
+}
+
+.appearingBgAbout {
+  right: 0%;
+  animation-duration: 0.65S ;
+  animation-name: image-inAbout;
+
+}
+
+@keyframes image-inAbout {
+  0%{
+    right:100%;
+  }
+  50% {
+    right:100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+/*______Common_______*/
+
+.separatorBar {
+    width:300px;
+    border-bottom: 1px solid black;
+  }
+
+  .bgBody {
+  
+    height:100%;
+    width:100%;
+    background: linear-gradient(144deg, rgba(9,9,121,0) 35%, rgba(0,159,255,1) 100%);
+  
+  }
+
+/* content */
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 20px;
+  }
+  
+  .content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .content a {
+    color: #cc3852;
+    margin-right: 10px;
+  }
+
+  .noneContent {
+    display: none;
+  }
+
+  .noscrollpage {
+    max-height: 90vh;
+    overflow: hidden;
+    z-index: -1;
+  }

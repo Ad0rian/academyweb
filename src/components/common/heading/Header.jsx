@@ -1,0 +1,58 @@
+import React from "react";
+import "./header.css";
+import { Link } from 'react-router-dom';
+import { Fade as Hamburger } from 'hamburger-react'
+import LateralMenu from './LateralMenu';
+import Navbar from './Navbar';
+
+const Header = () => {
+  return (
+    <div>
+        <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+        <header id="top">
+        
+          <nav className='flexSB'>
+          
+            <div className='logo'>
+              <div className="buttonMenu"><Hamburger size={20} onToggle={toggled => {
+                if (toggled) {
+                  window.scrollTo({
+                    top: 0, 
+                    behavior: 'smooth'
+                  });
+                  document.getElementById("Lateral").classList.add('lateralMenuOpen');
+                  document.getElementById("Lateral").classList.remove('lateralMenuClosed');
+                  document.getElementById("BodyContent").classList.add('noscrollpage');
+                  document.getElementById("FooterContent").classList.add('noneContent');
+                  document.getElementById("bgHomeid").classList.remove('bgHome');
+                  document.getElementById("bgAboutid").classList.remove('bgAbout');
+                } else {
+                  document.getElementById("Lateral").classList.remove('lateralMenuOpen');
+                  document.getElementById("Lateral").classList.add('lateralMenuClosed');
+                  document.getElementById("BodyContent").classList.remove('noscrollpage');
+                  document.getElementById("FooterContent").classList.remove('noneContent');
+                  document.getElementById("bgHomeid").classList.add('bgHome');
+                  document.getElementById("bgAboutid").classList.add('bgAbout');
+                }
+              }} /></div>
+                      <h1 className="title"><Link to="/">ACADEMIA</Link></h1>
+            </div>
+            
+            <Navbar/>
+
+            <ul className='flexSB right'>
+              <li><Link to="/">Login</Link></li>
+              <li><Link to="/">Register</Link></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="Lateral" className="lateralMenu " >
+          <LateralMenu/>
+        </div>
+    </div>
+    
+  )
+}
+
+export default Header

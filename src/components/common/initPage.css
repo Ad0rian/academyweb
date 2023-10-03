@@ -1,0 +1,91 @@
+/*___Home____*/
+
+.homeBody {
+  
+    display:flex;
+   
+  }
+  
+  .partHB {
+   
+   min-width: 10px;
+   width:50%;
+   margin-top:100px;
+   margin-left:100px;
+   margin-right:40px;
+  
+  }
+
+  .partHB p {
+    font-size: 20px;;
+  }
+
+  @media only screen and (max-width: 1053px) {
+    .homeBody{
+        display:block;
+    }
+
+  }
+
+  /*_______Courses__________*/
+  .coursesBody {
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+
+
+
+/*_________Contact__________*/
+
+.contactImage {
+  position:relative;
+
+  max-width: 100%;
+  max-height:650px;
+  mask-image: linear-gradient(black, transparent);
+  left: 125%;
+}
+
+.contactPage {
+  display:flex;
+
+}
+
+@media only screen and (max-width: 1053px) {
+
+  .contactPage{
+    display:block;
+}
+
+}
+
+/*_____Anim____*/
+.appearingImage {
+  left: 0%;
+  animation-duration: 0.5S ;
+  animation-name: image-in;
+
+}
+
+@keyframes image-in {
+  0%{
+    left:125%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.containerImage {
+  background-color: none;
+  
+  min-width:100%;
+  min-height:650px;
+  max-width:100px;
+  max-height:100px;
+}
