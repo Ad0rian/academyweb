@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react'
+import { FaSignInAlt, FaUserPlus  } from 'react-icons/fa';
 import LateralMenu from './LateralMenu';
 import Navbar from './Navbar';
 
@@ -42,8 +43,8 @@ const Header = () => {
             <Navbar/>
 
             <ul className='flexSB right'>
-              <li><Link to="/">Login</Link></li>
-              <li><Link to="/">Register</Link></li>
+              <li><Link to="/"><FaSignInAlt/></Link></li>
+              <li><Link to="/"><FaUserPlus/></Link></li>
             </ul>
           </nav>
         </header>

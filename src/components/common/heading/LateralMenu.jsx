@@ -23,15 +23,33 @@ const LateralMenu = (Lat) => {
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
         >
-          <TreeItem nodeId="1" label="Applications">
-            <TreeItem nodeId="2" label="Calendar" />
-          </TreeItem>
-          <TreeItem nodeId="5" label="Documents">
-            <TreeItem nodeId="10" label="OSS" />
-            <TreeItem nodeId="6" label="MUI">
-              <TreeItem nodeId="8" label="index.js" />
+          <TreeItem nodeId="1" label="Applications"></TreeItem>
+          
+          <TreeItem nodeId="2" label="Documents">
+            <TreeItem nodeId="3" label="Todos" />
+
+            <TreeItem nodeId="4" label="ESO">
+              <TreeItem nodeId="8" label="Primero" />
+              <TreeItem nodeId="9" label="Segundo" />
+              <TreeItem nodeId="10" label="Tercero" />
+              <TreeItem nodeId="11" label="Cuarto" />
             </TreeItem>
+
+
+            <TreeItem nodeId="5" label="Bachiller">
+              <TreeItem nodeId="12" label="Primero" />
+              <TreeItem nodeId="13" label="Segundo" />
+            </TreeItem>
+
+            <TreeItem nodeId="6" label="Universidad">
+              <TreeItem nodeId="14" label="Primero" />
+              <TreeItem nodeId="15" label="Segundo" />
+              <TreeItem nodeId="16" label="Tercero" />
+              <TreeItem nodeId="17" label="Cuarto" />
+            </TreeItem>
+
           </TreeItem>
+          <TreeItem nodeId="7" label="About"></TreeItem>
         </TreeView>
       </Box>
     );
