@@ -71,6 +71,12 @@ li {
   font-family: myFirstFont;
 }
 
+.MuiTreeItem-label{
+  font-family: myFirstFont !important;
+  src: url(./components/fonts/Poppins/Poppins-Regular.otf) !important;
+  font-size: 20px !important;
+}
+
 
 /*___________dropdown menu_____________*/
 

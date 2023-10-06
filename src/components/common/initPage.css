@@ -17,7 +17,7 @@
   }
 
   .partHB p {
-    font-size: 20px;;
+    font-size: 20px;
   }
 
   @media only screen and (max-width: 1053px) {
@@ -89,3 +89,11 @@
   max-width:100px;
   max-height:100px;
 }
+
+@media only screen and (max-width: 1053px) {
+  .partHB {
+    margin-left: 50px;
+  }
+
+}
+

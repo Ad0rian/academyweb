@@ -17,6 +17,8 @@ const LateralMenu = (Lat) => {
     Lat = document.getElementById("Lateral");
     //console.log(Lat);
     return (
+
+      <div className="sizeboxLateral">
       <Box sx={{ minHeight: 180, flexGrow: 1, maxWidth: 300 }}>
         <TreeView
           aria-label="file system navigator"
@@ -52,6 +54,8 @@ const LateralMenu = (Lat) => {
           <TreeItem nodeId="7" label="About"></TreeItem>
         </TreeView>
       </Box>
+
+      </div>
     );
 }
 

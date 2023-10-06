@@ -1,5 +1,8 @@
 /*_____BG____*/
 
+
+
+
 .bgHome {
   background-image: linear-gradient(-60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
   bottom:0;
@@ -25,6 +28,18 @@
   z-index:-1;
 }
 
+@media only screen and (max-width: 1053px) {
+  .bgHome {
+    background-image: linear-gradient(-40deg, rgb(150, 208, 255) 80%, rgb(255, 255, 255) 80%);
+    width:100%;
+  }
+
+  .bgAbout {
+    background-image: linear-gradient(60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
+    width:100%;
+  }
+
+}
 
 .appearingBgHome {
   right:0%;
@@ -102,3 +117,4 @@
     overflow: hidden;
     z-index: -1;
   }
+
