@@ -87,7 +87,7 @@ const InitPage = () => {
                   </table>
                 </div>
               </div>
-
+              <br /><br /><br />
             </div>
           </div>
         </section>
