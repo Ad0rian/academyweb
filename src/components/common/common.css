@@ -1,8 +1,5 @@
 /*_____BG____*/
 
-
-
-
 .bgHome {
   background-image: linear-gradient(-60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
   bottom:0;
@@ -79,7 +76,7 @@
 /*______Common_______*/
 
 .separatorBar {
-    width:300px;
+    width:80%;
     border-bottom: 1px solid black;
   }
 

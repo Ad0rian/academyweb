@@ -2,11 +2,6 @@ import React from "react";
 import personImage from '../img/contactPage/menStock.png';
 import "./initPage.css";
 import { useInView } from 'react-intersection-observer';
-import Box from '@mui/material/Box';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { TreeView } from '@mui/x-tree-view/TreeView'; 
-import { TreeItem } from '@mui/x-tree-view/TreeItem';
 
 
 const InitPage = () => {
@@ -32,63 +27,71 @@ const InitPage = () => {
         </div>
         <div className="partHB">
         <div ></div>
-
-        
         </div>
       </section>
       {/* Courses general view*/}
       <div className="coursesBody">
         <section id="courses" className="homeBody" url={myCourseIsvisible ? window.location = './#classes' : null}>
-        <div className="partHB">
+          <div className="partHB">
             <h1 ref={courses}> Classroom title</h1> 
             <hr className="separatorBar"></hr><br/><br /><br />
             <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
             <span> canal yutu</span><br /><br /><br />
             <p>Commodo elit nostrud ullamco esse ex dolor qui et ea laboris ea est qui nostrud. Aliqua incididunt duis consequat ea adipisicing do elit ex esse eu. Magna voluptate in eiusmod pariatur proident consequat sunt consectetur.</p>
           </div>
-          <div className="partHB">
-          <div >
-            
-          <Box sx={{ minHeight: 180, flexGrow: 1, maxWidth: 300 }}>
-        <TreeView 
-          aria-label="file system navigator"
-          defaultCollapseIcon={<ExpandMoreIcon />}
-          defaultExpandIcon={<ChevronRightIcon />}
-        >
-          <TreeItem nodeId="1" label="Applications"></TreeItem>
-          
-          <TreeItem nodeId="2" label="Documents">
-            <TreeItem nodeId="3" label="Todos" />
+          <div className="partHB containerCourses">
+            <div className="contentCourses">
+              <h1> Secundaria</h1>
+              <hr className="separatorBar"></hr><br/><br/>
+              <div className="insideCourses">
+                <div className="partCourses LeftCourses">
+                  <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
+                </div>
+                <div className="partCourses RightCourses">
+                  <table>
+                    <tr>1r ESO</tr>
+                    <tr>2n ESO</tr>
+                    <tr>3r ESO</tr>
+                    <tr>4t ESO</tr>
+                  </table>
+                </div>
+              </div>
 
-            <TreeItem nodeId="4" label="ESO">
-              <TreeItem nodeId="8" label="Primero" />
-              <TreeItem nodeId="9" label="Segundo" />
-              <TreeItem nodeId="10" label="Tercero" />
-              <TreeItem nodeId="11" label="Cuarto" />
-            </TreeItem>
+              <h1> Bachillerato</h1>
+              <hr className="separatorBar"></hr><br/><br/>
+              <div className="insideCourses">
+                <div className="partCourses LeftCourses">
+                  <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
+                </div>
+                <div className="partCourses RightCourses">
+                  <table>
+                    <tr>1r Curso</tr>
+                    <tr>2n Curso</tr>
+                    <tr>Selectividad</tr>
+                  </table>
+                </div>
+              </div>
 
+              <h1> Universidad</h1>
+              <hr className="separatorBar"></hr><br/><br/>
+              <div className="insideCourses">
+                <div className="partCourses LeftCourses">
+                  <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
+                </div>
+                <div className="partCourses RightCourses">
+                  <table>
+                    <tr>1r Año</tr>
+                    <tr>2n Año</tr>
+                    <tr>3r Año</tr>
+                    <tr>4t Año</tr>
+                  </table>
+                </div>
+              </div>
 
-            <TreeItem nodeId="5" label="Bachiller">
-              <TreeItem nodeId="12" label="Primero" />
-              <TreeItem nodeId="13" label="Segundo" />
-            </TreeItem>
-
-            <TreeItem nodeId="6" label="Universidad">
-              <TreeItem nodeId="14" label="Primero" />
-              <TreeItem nodeId="15" label="Segundo" />
-              <TreeItem nodeId="16" label="Tercero" />
-              <TreeItem nodeId="17" label="Cuarto" />
-            </TreeItem>
-
-          </TreeItem>
-          <TreeItem nodeId="7" label="About"></TreeItem>
-        </TreeView>
-      </Box>
-
+            </div>
           </div>
-          
-        </div>
         </section>
+        
       </div>
       {/* Contact view*/}
       <section id="aboutSection" className="homeBody" url={myAboutIsvisible && !myCourseIsvisible ? window.location = './#about' : null}>

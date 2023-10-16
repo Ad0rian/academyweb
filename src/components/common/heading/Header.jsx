@@ -42,7 +42,7 @@ const Header = () => {
             
             <Navbar/>
 
-            <ul className='flexSB right'>
+            <ul className='flexSB rightPart'>
               <li><Link to="/"><FaSignInAlt/></Link></li>
               <li><Link to="/"><FaUserPlus/></Link></li>
             </ul>

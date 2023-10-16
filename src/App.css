@@ -46,12 +46,6 @@ html {
   margin:auto;
 }
 
-.flexSB {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 a {
   text-decoration: none; 
 }
@@ -64,7 +58,7 @@ li {
 
 @font-face {
   font-family: myFirstFont;
-  src: url(./components/fonts/Poppins/Poppins-Regular.otf);
+  src: url(./components/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 * {
