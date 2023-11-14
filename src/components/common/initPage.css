@@ -17,19 +17,21 @@
   }
 
   table {
-    font-family: arial, sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
     border-color: #ffffff;
     border-collapse: collapse;
     width: 100%;
     
   }
 
-  tr {
+  td {
     text-align: center;
-    border: 2px solid #b2dcff;
+    border: 5px solid #b2dcff;
     background-color: #ffffff;
+    border-radius: 20px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
   }
 
   .partCourses {
@@ -45,6 +47,7 @@
 
   .RightCourses {
     width:40%;
+    margin: auto;
    }
 
   .partHB p {

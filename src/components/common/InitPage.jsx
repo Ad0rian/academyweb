@@ -17,10 +17,10 @@ const InitPage = () => {
       <div id="bgHomeid" className= {myHomeIsvisible || myCourseIsvisible ? "bgHome appearingBgHome" : 'bgHome'}></div>
       <div id="bgAboutid" className= {myAboutIsvisible || myImageAboutIsvisible ? "bgAbout appearingBgAbout" : 'bgAbout'}></div>
 
-      <section id="home" className="homeBody" url={myHomeIsvisible && !myCourseIsvisible ? window.location = './#ini' : null}>
+      <section id="home" className="homeBody">
         <div ref={home} className="partHB">
           <h1 > Classroom title </h1>
-          <hr className="separatorBar"></hr><br/><br /><br />
+          <br/><br /><br />
           <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
           <span> canal yutu</span><br /><br /><br />
           <p>Commodo elit nostrud ullamco esse ex dolor qui et ea laboris ea est qui nostrud. Aliqua incididunt duis consequat ea adipisicing do elit ex esse eu. Magna voluptate in eiusmod pariatur proident consequat sunt consectetur.</p>
@@ -31,59 +31,62 @@ const InitPage = () => {
       </section>
       {/* Courses general view*/}
       <div className="coursesBody">
-        <section id="courses" className="homeBody" url={myCourseIsvisible ? window.location = './#classes' : null}>
+        <section id="courses" className="homeBody">
           <div className="partHB">
             <h1 ref={courses}> Classroom title</h1> 
-            <hr className="separatorBar"></hr><br/><br /><br />
+            <br/><br /><br />
             <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
             <span> canal yutu</span><br /><br /><br />
             <p>Commodo elit nostrud ullamco esse ex dolor qui et ea laboris ea est qui nostrud. Aliqua incididunt duis consequat ea adipisicing do elit ex esse eu. Magna voluptate in eiusmod pariatur proident consequat sunt consectetur.</p>
           </div>
           <div className="partHB containerCourses">
             <div className="contentCourses">
-              <h1> Secundaria</h1>
-              <hr className="separatorBar"></hr><br/><br/>
+
               <div className="insideCourses">
                 <div className="partCourses LeftCourses">
+                  <h1> Secundaria</h1>
+                <br />
                   <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
                 </div>
                 <div className="partCourses RightCourses">
                   <table>
-                    <tr>1r ESO</tr>
-                    <tr>2n ESO</tr>
-                    <tr>3r ESO</tr>
-                    <tr>4t ESO</tr>
+                    <tr><td>1r ESO</td></tr>
+                    <tr><td>2n ESO</td></tr>
+                    <tr><td>3r ESO</td></tr>
+                    <tr><td>4t ESO</td></tr>
                   </table>
                 </div>
               </div>
 
-              <h1> Bachillerato</h1>
-              <hr className="separatorBar"></hr><br/><br/>
+              
               <div className="insideCourses">
                 <div className="partCourses LeftCourses">
+                  <h1> Bachillerato</h1>
+                <br/>
                   <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
                 </div>
                 <div className="partCourses RightCourses">
                   <table>
-                    <tr>1r Curso</tr>
-                    <tr>2n Curso</tr>
-                    <tr>Selectividad</tr>
+                  <tr><td>1r Curso</td></tr>
+                  <tr><td>2n Curso</td></tr>
+                  <tr><td>Selectividad</td></tr>
                   </table>
                 </div>
               </div>
 
-              <h1> Universidad</h1>
-              <hr className="separatorBar"></hr><br/><br/>
+
               <div className="insideCourses">
                 <div className="partCourses LeftCourses">
+                  <h1> Universidad</h1>
+                <br/>
                   <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud.</p><br /><br />
                 </div>
                 <div className="partCourses RightCourses">
                   <table>
-                    <tr>1r Año</tr>
-                    <tr>2n Año</tr>
-                    <tr>3r Año</tr>
-                    <tr>4t Año</tr>
+                  <tr><td>1r Año</td></tr>
+                  <tr><td>2n Año</td></tr>
+                  <tr><td>3r Año</td></tr>
+                  <tr><td>4t Año</td></tr>
                   </table>
                 </div>
               </div>
@@ -94,10 +97,10 @@ const InitPage = () => {
         
       </div>
       {/* Contact view*/}
-      <section id="aboutSection" className="homeBody" url={myAboutIsvisible && !myCourseIsvisible ? window.location = './#about' : null}>
+      <section id="aboutSection" className="homeBody">
         <div ref={about} className="partHB">
           <h1 > Classroom title</h1>
-          <hr className="separatorBar"></hr><br/><br /><br />
+          <br/><br /><br />
           <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
           <span> canal yutu</span>
           </div>

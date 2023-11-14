@@ -62,8 +62,15 @@ li {
 }
 
 * {
-  /*font-family: myFirstFont;*/
   font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.title{
+  font-family: myFirstFont !important;
+}
+
+.menus{
+  font-family: myFirstFont !important;
 }
 
 .MuiTreeItem-label{
@@ -186,7 +193,5 @@ button span {
   left: 100%;
   top: -7px;
 }
-
-/*_____Scroll______*/
 
 

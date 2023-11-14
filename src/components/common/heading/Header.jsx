@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react'
 import { FaSignInAlt, FaUserPlus  } from 'react-icons/fa';
 import LateralMenu from './LateralMenu';
-import Navbar from './Navbar';
 
 const Header = () => {
   return (
@@ -37,10 +36,14 @@ const Header = () => {
                   document.getElementById("bgAboutid").classList.add('bgAbout');
                 }
               }} /></div>
-                      <h1 className="title"><Link to="/">ACADEMIA</Link></h1>
+                      <Link to="/"><h1 className="title">ACADEMIA</h1></Link>
             </div>
             
-            <Navbar/>
+            <ul className="menus flexSB center">
+              <li>Home</li>
+              <li>Classes</li>
+              <li>About</li>
+            </ul>
 
             <ul className='flexSB rightPart'>
               <li><Link to="/"><FaSignInAlt/></Link></li>
