@@ -62,7 +62,8 @@ li {
 }
 
 * {
-  font-family: myFirstFont;
+  /*font-family: myFirstFont;*/
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
 }
 
 .MuiTreeItem-label{
