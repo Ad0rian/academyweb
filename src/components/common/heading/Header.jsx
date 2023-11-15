@@ -6,6 +6,14 @@ import { FaSignInAlt, FaUserPlus  } from 'react-icons/fa';
 import LateralMenu from './LateralMenu';
 
 const Header = () => {
+
+  const scrollToposition = (position) =>{
+    window.scrollTo({
+      top: position, 
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div>
         <meta name="viewport" 
@@ -15,7 +23,7 @@ const Header = () => {
           <nav className='flexSB'>
           
             <div className='logo'>
-              <div className="buttonMenu"><Hamburger size={20} onToggle={toggled => {
+              <div className="buttonMenu"><Hamburger id="HamburgerMenu" size={20} onToggle={toggled => {
                 if (toggled) {
                   window.scrollTo({
                     top: 0, 
@@ -40,9 +48,9 @@ const Header = () => {
             </div>
             
             <ul className="menus flexSB center">
-              <li>Home</li>
-              <li>Classes</li>
-              <li>About</li>
+              <li className="buttonHeader" onClick={() => scrollToposition(0)} >Home </li>
+              <li className="buttonHeader" onClick={() => scrollToposition(600)} >Classes</li>
+              <li className="buttonHeader" onClick={() => scrollToposition(1500)} >About</li>
             </ul>
 
             <ul className='flexSB rightPart'>

@@ -25,8 +25,7 @@ header {
 }
 
 .title {
-    text-align: left;
-    
+    text-align: left; 
 }
 
 header li {
@@ -34,6 +33,15 @@ header li {
     font-size: 20px;
     font-weight:900;
     
+}
+
+.buttonHeader {
+    z-index: 1;
+   cursor: pointer;
+}
+
+.buttonHeader:hover {
+    color: rgb(94, 108, 120);
 }
 
 header .center {
