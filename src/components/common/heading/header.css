@@ -93,9 +93,13 @@ header .center {
     width: 100%;
     height:100%;
     background-color: white;
-    left:-100%
+    left:-100%;
 }
 
+.latMenu {
+    display: inline-block;
+  }
+  
 .lateralMenuClosed {
     animation:slideClosed 0.25s ease-in;
     left:-100%

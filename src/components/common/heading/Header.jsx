@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react'
 import { FaSignInAlt, FaUserPlus  } from 'react-icons/fa';
-import LateralMenu from './LateralMenu';
+
 
 const Header = () => {
+  
+  const [isOpen, setOpen] = useState(false)
 
-  const scrollToposition = (position) =>{
-    window.scrollTo({
-      top: position, 
-      behavior: 'smooth'
-    });
+  const scrollToposition = (position) =>{document.getElementById(position).scrollIntoView({behavior: "auto"});}
+  
+  const scrollTopositionLateral = (position) =>{
+    setOpen(false);
+    hamburgerToggle(isOpen);
+    scrollToposition(position);
   };
 
+  const hamburgerToggle = (toggled) =>{ 
+    console.log("set "+ toggled);
+    if (!toggled) {
+      window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+      });
+      document.getElementById("Lateral").classList.add('lateralMenuOpen');
+      document.getElementById("Lateral").classList.remove('lateralMenuClosed');
+      document.getElementById("BodyContent").classList.add('noscrollpage');
+      document.getElementById("FooterContent").classList.add('noneContent');
+      document.getElementById("bgHomeid").classList.remove('bgHome');
+      document.getElementById("bgAboutid").classList.remove('bgAbout');
+    } else {
+      document.getElementById("Lateral").classList.remove('lateralMenuOpen');
+      document.getElementById("Lateral").classList.add('lateralMenuClosed');
+      document.getElementById("BodyContent").classList.remove('noscrollpage');
+      document.getElementById("FooterContent").classList.remove('noneContent');
+      document.getElementById("bgHomeid").classList.add('bgHome');
+      document.getElementById("bgAboutid").classList.add('bgAbout');
+    }
+  }
+
+  
   return (
     <div>
         <meta name="viewport" 
@@ -23,34 +50,16 @@ const Header = () => {
           <nav className='flexSB'>
           
             <div className='logo'>
-              <div className="buttonMenu"><Hamburger id="HamburgerMenu" size={20} onToggle={toggled => {
-                if (toggled) {
-                  window.scrollTo({
-                    top: 0, 
-                    behavior: 'smooth'
-                  });
-                  document.getElementById("Lateral").classList.add('lateralMenuOpen');
-                  document.getElementById("Lateral").classList.remove('lateralMenuClosed');
-                  document.getElementById("BodyContent").classList.add('noscrollpage');
-                  document.getElementById("FooterContent").classList.add('noneContent');
-                  document.getElementById("bgHomeid").classList.remove('bgHome');
-                  document.getElementById("bgAboutid").classList.remove('bgAbout');
-                } else {
-                  document.getElementById("Lateral").classList.remove('lateralMenuOpen');
-                  document.getElementById("Lateral").classList.add('lateralMenuClosed');
-                  document.getElementById("BodyContent").classList.remove('noscrollpage');
-                  document.getElementById("FooterContent").classList.remove('noneContent');
-                  document.getElementById("bgHomeid").classList.add('bgHome');
-                  document.getElementById("bgAboutid").classList.add('bgAbout');
-                }
-              }} /></div>
+              <div className="buttonMenu">
+                
+                <Hamburger size={20} toggled={isOpen} toggle={setOpen} onToggle={() => hamburgerToggle(isOpen)}/></div>
                       <Link to="/"><h1 className="title">ACADEMIA</h1></Link>
             </div>
             
             <ul className="menus flexSB center">
-              <li className="buttonHeader" onClick={() => scrollToposition(0)} >Home </li>
-              <li className="buttonHeader" onClick={() => scrollToposition(600)} >Classes</li>
-              <li className="buttonHeader" onClick={() => scrollToposition(1500)} >About</li>
+              <li className="buttonHeader" onClick={() => scrollToposition('top')} >Home </li>
+              <li className="buttonHeader" onClick={() => scrollToposition('courses')} >Classes</li>
+              <li className="buttonHeader" onClick={() => scrollToposition('aboutSection')} >About</li>
             </ul>
 
             <ul className='flexSB rightPart'>
@@ -60,11 +69,19 @@ const Header = () => {
           </nav>
         </header>
         <div id="Lateral" className="lateralMenu " >
-          <LateralMenu/>
+
+        <div className="sizeboxLateral">
+              <ul className="menus center latMenu">
+              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('top')} >Home </li>
+              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('courses')} >Classes</li>
+              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('aboutSection')} >About</li>
+            </ul>
+
+      </div>
+
         </div>
     </div>
     
   )
 }
-
 export default Header
