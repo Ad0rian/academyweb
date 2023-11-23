@@ -40,12 +40,26 @@ header li {
    cursor: pointer;
 }
 
+.buttonHeaderlateral {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px dotted grey;
+}
+
+
 .buttonHeader:hover {
     color: rgb(94, 108, 120);
 }
 
 header .center {
     margin-left: 0px;
+}
+
+.buttonMenu {
+    position:fixed;
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media only screen and (max-width: 1053px) {
@@ -59,14 +73,19 @@ header .center {
     header .center{
         display:none;
     }
-
 }
+
 
 @media only screen and (min-width: 1053px) {
     .buttonMenu {
-        display:none
+        display:none;
     }
+}
 
+@media only screen and (max-width: 1053px) {
+    .title {
+        margin-left: 50px !important;
+    }
 }
 
 @media only screen and (max-width: 1053px) {
@@ -98,16 +117,24 @@ header .center {
 
 .latMenu {
     display: inline-block;
+    width:100%;
   }
   
 .lateralMenuClosed {
+    border-bottom-right-radius: 25px;
     animation:slideClosed 0.25s ease-in;
-    left:-100%
+    height:auto;
+    left:-100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 .lateralMenuOpen {
+    border-bottom-right-radius: 25px;
+    height:auto;
     animation:slideOpen 0.25s ease-in;
-    left:0%
+    left:0%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
   
   @keyframes slideClosed {
@@ -130,7 +157,10 @@ header .center {
 
   .sizeboxLateral{
 
-    margin:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
  

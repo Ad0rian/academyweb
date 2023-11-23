@@ -18,7 +18,6 @@ const Header = () => {
   };
 
   const hamburgerToggle = (toggled) =>{ 
-    console.log("set "+ toggled);
     if (!toggled) {
       window.scrollTo({
         top: 0, 
@@ -26,17 +25,17 @@ const Header = () => {
       });
       document.getElementById("Lateral").classList.add('lateralMenuOpen');
       document.getElementById("Lateral").classList.remove('lateralMenuClosed');
-      document.getElementById("BodyContent").classList.add('noscrollpage');
-      document.getElementById("FooterContent").classList.add('noneContent');
-      document.getElementById("bgHomeid").classList.remove('bgHome');
-      document.getElementById("bgAboutid").classList.remove('bgAbout');
+      //document.getElementById("BodyContent").classList.add('noscrollpage');
+      //document.getElementById("FooterContent").classList.add('noneContent');
+      //document.getElementById("bgHomeid").classList.remove('bgHome');
+      //document.getElementById("bgAboutid").classList.remove('bgAbout');
     } else {
       document.getElementById("Lateral").classList.remove('lateralMenuOpen');
       document.getElementById("Lateral").classList.add('lateralMenuClosed');
-      document.getElementById("BodyContent").classList.remove('noscrollpage');
-      document.getElementById("FooterContent").classList.remove('noneContent');
-      document.getElementById("bgHomeid").classList.add('bgHome');
-      document.getElementById("bgAboutid").classList.add('bgAbout');
+      //document.getElementById("BodyContent").classList.remove('noscrollpage');
+      //document.getElementById("FooterContent").classList.remove('noneContent');
+      //document.getElementById("bgHomeid").classList.add('bgHome');
+      //document.getElementById("bgAboutid").classList.add('bgAbout');
     }
   }
 
@@ -72,9 +71,9 @@ const Header = () => {
 
         <div className="sizeboxLateral">
               <ul className="menus center latMenu">
-              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('top')} >Home </li>
-              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('courses')} >Classes</li>
-              <li className="buttonHeader"  onClick={() => scrollTopositionLateral('aboutSection')} >About</li>
+              <li className="buttonHeader buttonHeaderlateral"  onClick={() => scrollTopositionLateral('top')} >Home </li>
+              <li className="buttonHeader buttonHeaderlateral"  onClick={() => scrollTopositionLateral('courses')} >Classes</li>
+              <li className="buttonHeader buttonHeaderlateral"  onClick={() => scrollTopositionLateral('aboutSection')} >About</li>
             </ul>
 
       </div>
