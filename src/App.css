@@ -89,7 +89,7 @@ li {
 }
 
 body {
-  position:absolute;
+  position:relative;
   font-family: sans-serif;
   overflow-x: hidden;
 }

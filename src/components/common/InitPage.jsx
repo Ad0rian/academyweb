@@ -17,7 +17,8 @@ const InitPage = () => {
       <div id="bgHomeid" className= {myHomeIsvisible || myCourseIsvisible ? "bgHome appearingBgHome" : 'bgHome'}></div>
       <div id="bgAboutid" className= {myAboutIsvisible || myImageAboutIsvisible ? "bgAbout appearingBgAbout" : 'bgAbout'}></div>
 
-      <section id="home" className="homeBody">
+      <section id="home"></section>
+      <div className="homeBody">
         <div ref={home} className="partHB">
           <h1 > Classroom title </h1>
           <br/><br /><br />
@@ -28,10 +29,10 @@ const InitPage = () => {
         <div className="partHB">
         <div ></div>
         </div>
-      </section>
+      </div>
       {/* Courses general view*/}
-      <div className="coursesBody">
-        <section id="courses" className="homeBody">
+      
+        <div id="courses" className="coursesBody homeBody">
           <div className="partHB">
             <h1 ref={courses}> Classroom title</h1> 
             <br/><br /><br />
@@ -93,11 +94,11 @@ const InitPage = () => {
               <br /><br /><br />
             </div>
           </div>
-        </section>
-        
-      </div>
+        </div>
+      
       {/* Contact view*/}
-      <section id="aboutSection" className="homeBody">
+      <section id="aboutSection"></section>
+      <div className="homeBody">
         <div ref={about} className="partHB">
           <h1 > Classroom title</h1>
           <br/><br /><br />
@@ -108,12 +109,8 @@ const InitPage = () => {
           <center className="containerImage">
             <img src={personImage} alt="img_Person"  className= {myImageAboutIsvisible ? "contactImage appearingImage" : 'contactImage'}/> 
             </center>
-        
-
-        
         </div>
-      </section>
-
+      </div>
       </div>
     )
   };
