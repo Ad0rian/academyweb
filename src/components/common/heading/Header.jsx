@@ -39,25 +39,12 @@ const Header = () => {
   const hamburgerToggle = (toggled) =>{ 
     if (!toggled) {
       istoggled = true;
-      /*window.scrollTo({
-        top: 0, 
-        behavior: 'smooth'
-      });
-      */
       document.getElementById("Lateral").classList.add('lateralMenuOpen');
       document.getElementById("Lateral").classList.remove('lateralMenuClosed');
-      //document.getElementById("BodyContent").classList.add('noscrollpage');
-      //document.getElementById("FooterContent").classList.add('noneContent');
-      //document.getElementById("bgHomeid").classList.remove('bgHome');
-      //document.getElementById("bgAboutid").classList.remove('bgAbout');
     } else {
       istoggled = false;
       document.getElementById("Lateral").classList.remove('lateralMenuOpen');
       document.getElementById("Lateral").classList.add('lateralMenuClosed');
-      //document.getElementById("BodyContent").classList.remove('noscrollpage');
-      //document.getElementById("FooterContent").classList.remove('noneContent');
-      //document.getElementById("bgHomeid").classList.add('bgHome');
-      //document.getElementById("bgAboutid").classList.add('bgAbout');
     }
   }
 
@@ -66,9 +53,9 @@ const Header = () => {
     <div>
         <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
-        <header id="top">
+        <header id="top" className="headerSize">
         
-          <nav className='flexSB'>
+          <nav className='flexSB alignHeader'>
           
             <div className='logo'>
               <div className={`buttonMenu ${show && 'buttonMenuHidden'}`} >

@@ -7,7 +7,7 @@
 
   
 header {
-    border-bottom: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
 }
 
@@ -85,6 +85,13 @@ header .center {
     }
 }
 
+.headerSize{
+    height: 45px;
+}
+
+.alignHeader{
+    height: 45px;
+}
 
 @media only screen and (min-width: 1053px) {
     .buttonMenu {
@@ -123,6 +130,7 @@ header .center {
     height:100%;
     background-color: white;
     left:-100%;
+    z-index: 1;
 }
 
 .latMenu {

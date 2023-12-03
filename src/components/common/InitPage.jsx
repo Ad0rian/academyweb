@@ -18,21 +18,23 @@ const InitPage = () => {
       <div id="bgAboutid" className= {myAboutIsvisible || myImageAboutIsvisible ? "bgAbout appearingBgAbout" : 'bgAbout'}></div>
 
       <section id="home"></section>
-      <div className="homeBody">
+      <div className="homeBody pageBody">
         <div ref={home} className="partHB">
-          <h1 > Classroom title </h1>
+          <h1 > Matemáticas y mucho mas </h1>
           <br/><br /><br />
-          <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
+          <p>Bienvenido a matemáticas de Jalón, tu academia de matemáticas de confianza, aqui aprenderas desde los conceptos mas básicos hasta los mas complejos de forma sencilla y lógica.</p><br /><br />
           <span> canal yutu</span><br /><br /><br />
-          <p>Commodo elit nostrud ullamco esse ex dolor qui et ea laboris ea est qui nostrud. Aliqua incididunt duis consequat ea adipisicing do elit ex esse eu. Magna voluptate in eiusmod pariatur proident consequat sunt consectetur.</p>
+          <p>En mi canal de youtube he estado enseñando matemáticas durante años.</p>
         </div>
         <div className="partHB">
-        <div ></div>
+        <div >
+        <iframe className="iframevideo" src="https://www.youtube.com/embed/2M3U3-RDR6Y?si=p0xYEmoHu9nzi_6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         </div>
       </div>
       {/* Courses general view*/}
       
-        <div id="courses" className="coursesBody homeBody">
+        <div id="courses" className="coursesBody pageBody">
           <div className="partHB">
             <h1 ref={courses}> Classroom title</h1> 
             <br/><br /><br />
@@ -98,7 +100,7 @@ const InitPage = () => {
       
       {/* Contact view*/}
       <section id="aboutSection"></section>
-      <div className="homeBody">
+      <div className="aboutBody pageBody">
         <div ref={about} className="partHB">
           <h1 > Classroom title</h1>
           <br/><br /><br />
