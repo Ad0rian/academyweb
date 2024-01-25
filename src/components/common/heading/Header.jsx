@@ -61,7 +61,7 @@ const Header = () => {
               <div className={`buttonMenu ${show && 'buttonMenuHidden'}`} >
                 
                 <Hamburger size={20} toggled={isOpen} toggle={setOpen} onToggle={() => hamburgerToggle(isOpen)}/></div>
-                      <Link to="/"><h1 className="title">ACADEMIA</h1></Link>
+                      <Link to="/"><h1 className="title">MJ</h1></Link>
             </div>
             
             <ul className="menus flexSB center">
@@ -71,8 +71,8 @@ const Header = () => {
             </ul>
 
             <ul className='flexSB rightPart'>
-              <li><Link to="/"><FaSignInAlt/></Link></li>
-              <li><Link to="/"><FaUserPlus/></Link></li>
+              <li className="buttonLogin" onClick={() => ""}>Login <FaSignInAlt/></li>
+              <li className="buttonLogin" onClick={() => ""}>Register <FaUserPlus/></li>
             </ul>
           </nav>
         </header>

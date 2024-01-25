@@ -1,12 +1,13 @@
 
 .flexSB {
     display:flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
   }
 
   
 header {
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
 }
@@ -29,13 +30,17 @@ header {
 }
 
 header li {
-    margin-right: 40px;
-    font-size: 20px;
-    font-weight:900;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
     
 }
 
 .buttonHeader {
+    z-index: 1;
+   cursor: pointer;
+}
+
+.buttonLogin {
     z-index: 1;
    cursor: pointer;
 }
@@ -48,7 +53,13 @@ header li {
 
 
 .buttonHeader:hover {
-    color: rgb(94, 108, 120);
+    color: rgb(255, 255, 255);
+    background-color: rgb(174, 69, 69);
+}
+
+.buttonLogin:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(174, 69, 69);
 }
 
 header .center {
@@ -86,11 +97,11 @@ header .center {
 }
 
 .headerSize{
-    height: 45px;
+    height: 50px;
 }
 
 .alignHeader{
-    height: 45px;
+    height: 50px;
 }
 
 @media only screen and (min-width: 1053px) {
@@ -180,5 +191,11 @@ header .center {
     margin-right: 50px;
     margin-left: 50px;
   }
+
+ .rightPart{
+    float:right;
+    position: absolute;
+    right:0px;
+ }
 
  

@@ -1,5 +1,6 @@
 import React from "react";
 import personImage from '../img/contactPage/menStock.png';
+import bg1 from '../img/bg2.png';
 import "./initPage.css";
 import { useInView } from 'react-intersection-observer';
 
@@ -14,22 +15,28 @@ const InitPage = () => {
       
       <div id="BodyContent">
 
+{/*
       <div id="bgHomeid" className= {myHomeIsvisible || myCourseIsvisible ? "bgHome appearingBgHome" : 'bgHome'}></div>
       <div id="bgAboutid" className= {myAboutIsvisible || myImageAboutIsvisible ? "bgAbout appearingBgAbout" : 'bgAbout'}></div>
+      <div className="bgfirst"><img src={bg1}></img></div>z
+*/}
+
 
       <section id="home"></section>
-      <div className="homeBody pageBody">
-        <div ref={home} className="partHB">
-          <h1 > Matemáticas y mucho mas </h1>
-          <br/><br /><br />
-          <p>Bienvenido a matemáticas de Jalón, tu academia de matemáticas de confianza, aqui aprenderas desde los conceptos mas básicos hasta los mas complejos de forma sencilla y lógica.</p><br /><br />
-          <span> canal yutu</span><br /><br /><br />
-          <p>En mi canal de youtube he estado enseñando matemáticas durante años.</p>
-        </div>
-        <div className="partHB">
-        <div >
-        <iframe className="iframevideo" src="https://www.youtube.com/embed/2M3U3-RDR6Y?si=p0xYEmoHu9nzi_6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+      <div className="homeBodyBG homeBodyBGimage">
+        <div className="homeBody pageBody">
+          <div ref={home} className="partHB">
+            <h1 > Matemáticas y mucho mas </h1>
+            <br/><br /><br />
+            <p>Bienvenido a matemáticas de Jalón, tu academia de matemáticas de confianza, aqui aprenderas desde los conceptos mas básicos hasta los mas complejos de forma sencilla y lógica.</p><br /><br />
+            <span> canal yutu</span><br /><br /><br />
+            <p>En mi canal de youtube he estado enseñando matemáticas durante años.</p>
+          </div>
+          <div className="partHB">
+          <div >
+          <iframe className="iframevideo" src="https://www.youtube.com/embed/2M3U3-RDR6Y?si=p0xYEmoHu9nzi_6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          </div>
         </div>
       </div>
       {/* Courses general view*/}
@@ -100,19 +107,21 @@ const InitPage = () => {
       
       {/* Contact view*/}
       <section id="aboutSection"></section>
-      <div className="aboutBody pageBody">
-        <div ref={about} className="partHB">
-          <h1 > Classroom title</h1>
-          <br/><br /><br />
-          <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
-          <span> canal yutu</span>
+      <div className="aboutBodyBG">
+        <div className="aboutBody pageBody">
+          <div ref={about} className="partHB">
+            <h1 > Classroom title</h1>
+            <br/><br /><br />
+            <p>Exercitation consectetur exercitation nisi et excepteur sit aliquip. Ipsum commodo sit aliqua labore magna est minim enim ex incididunt proident nostrud. Laboris reprehenderit enim et ex exercitation aliqua culpa nostrud. Sint in minim officia culpa Lorem do voluptate minim et excepteur laboris. Amet ullamco sunt aliquip nostrud nostrud anim. Lorem et proident dolore dolor commodo.</p><br /><br />
+            <span> canal yutu</span>
+            </div>
+          <div ref={imageabout} className="partHB ">
+            <center className="containerImage">
+              <img src={personImage} alt="img_Person"  className= {myImageAboutIsvisible ? "contactImage appearingImage" : 'contactImage'}/> 
+              </center>
           </div>
-        <div ref={imageabout} className="partHB ">
-          <center className="containerImage">
-            <img src={personImage} alt="img_Person"  className= {myImageAboutIsvisible ? "contactImage appearingImage" : 'contactImage'}/> 
-            </center>
         </div>
-      </div>
+        </div>
       </div>
     )
   };
