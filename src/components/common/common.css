@@ -40,12 +40,47 @@
 
 .appearingBgHome {
   right:0%;
-  animation-duration: 0.5S ;
+  animation-duration: 0.7S ;
   animation-name: image-inHome;
 
 }
 
 @keyframes image-inHome {
+  0%{
+    right:-120%;
+  }
+  30%{
+    right:-120%;
+  }
+  100% {
+    right:0%;
+  }
+}
+
+.appearingBgLeft {
+  left:0%;
+  animation-duration: 0.5S ;
+  animation-name: image-inLeft;
+
+}
+
+@keyframes image-inLeft {
+  0%{
+    left:-45%;
+  }
+  100% {
+    left:0%;
+  }
+}
+
+.appearingBgCourses {
+  right: 0%;
+  animation-duration: 0.65S ;
+  animation-name: image-inBgCourses;
+
+}
+
+@keyframes image-inBgCourses {
   0%{
     right:-100%;
   }
@@ -54,22 +89,22 @@
   }
 }
 
-.appearingBgAbout {
+.appearingBgCoursesText {
   right: 0%;
-  animation-duration: 0.65S ;
-  animation-name: image-inAbout;
+  animation-duration: 0.75S ;
+  animation-name: image-inCoursesText;
 
 }
 
-@keyframes image-inAbout {
+@keyframes image-inCoursesText {
   0%{
-    right:100%;
+    right:-100%;
   }
-  50% {
-    right:100%;
+  50%{
+    right:-100%;
   }
   100% {
-    right: 0%;
+    right:0%;
   }
 }
 
