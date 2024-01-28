@@ -18,37 +18,11 @@
 
   table {
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
-    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
     border-color: #ffffff;
     border-collapse: collapse;
     width: 100%;
     
   }
-
-  td {
-    text-align: center;
-    border: 5px solid #5692D1;
-    background-color: #386a9f;
-    border-radius: 20px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-  }
-
-  .partCourses {
-    
-    min-width: 10px;
-   
-   
-   }
-  .LeftCourses {
-    width:60%;
-     margin-right:20px;
-   }
-
-  .RightCourses {
-    width:40%;
-    margin: auto;
-   }
 
   .partHB p {
     font-size: 18px;
@@ -112,7 +86,53 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
 
+  td {
+    text-align: center;
+    border: 5px solid #a256d1;
+    background-color: #93389f;
+    border-radius: 20px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+  }
 
+  .partCourses {
+    
+    min-width: 10px;
+   
+   
+   }
+  .LeftCourses {
+    width:60%;
+     margin-right:20px;
+   }
+
+  .RightCourses {
+    width:40%;
+    margin: auto;
+   }
+
+   .containerCourses
+   {
+     border-radius: 25px;
+     max-height:fit-content;
+     background-color: #a256d1;
+     color: #ffffff;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
+   }
+   
+   .contentCourses
+   {
+     overflow-y: auto;
+     max-height: 100%;
+     padding-top:50px;
+     padding-right: 50px;
+   }
+   
+   .insideCourses
+   {
+     display: flex;
+   }
 
 /*_________Contact__________*/
 
@@ -178,29 +198,6 @@
   }
 }
 
-
-.containerCourses
-{
-  border-radius: 25px;
-  max-height:fit-content;
-  background-color: #5692D1;
-  color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
-}
-
-.contentCourses
-{
-  overflow-y: auto;
-  max-height: 100%;
-  padding-top:50px;
-  padding-right: 50px;
-}
-
-.insideCourses
-{
-  display: flex;
-}
 
 /*Scrollbar properties*/
 /* width */
