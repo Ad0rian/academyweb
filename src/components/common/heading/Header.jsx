@@ -61,7 +61,7 @@ const Header = () => {
               <div className={`buttonMenu ${show && 'buttonMenuHidden'}`} >
                 
                 <Hamburger size={20} toggled={isOpen} toggle={setOpen} onToggle={() => hamburgerToggle(isOpen)}/></div>
-                      <Link to="/"><h1 className="title">MJ</h1></Link>
+                  <h1 className="title">MJ</h1>
             </div>
             
             <ul className="menus flexSB center">

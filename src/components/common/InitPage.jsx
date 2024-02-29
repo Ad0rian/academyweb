@@ -1,6 +1,5 @@
 import React from "react";
 import personImage from '../img/contactPage/menStock.png';
-import bg1 from '../img/bg2.png';
 import "./initPage.css";
 import { useInView } from 'react-intersection-observer';
 
@@ -21,8 +20,9 @@ const InitPage = () => {
       <div className="bgfirst"><img src={bg1}></img></div>z
 */}
 
-
+    
       <section id="home"></section>
+      <div className="separationBarTop"></div>
       <div className="homeBodyBG homeBodyBGimage">
         <div className="homeBody pageBody">
           <div ref={home} className= {myHomeIsvisible ? "partHB appearingBgLeft" : 'partHB'}>
@@ -39,9 +39,10 @@ const InitPage = () => {
           </div>
         </div>
       </div>
+      <div className="separationBar"></div>
       {/* Courses general view*/}
       
-        <div id="courses" className="coursesBody pageBody">
+        <div id="courses" className="coursesBody pageBody coursesBodyBGimage">
           <div ref={courses} className= {myCourseIsvisible  ? "partHB appearingBgCoursesText" : 'partHB'}>
             <h1 > Classroom title</h1> 
             <br/><br /><br />
@@ -104,10 +105,10 @@ const InitPage = () => {
             </div>
           </div>
         </div>
-      
+        <div className="separationBarAbout"></div>
       {/* Contact view*/}
       <section id="aboutSection"></section>
-      <div className="aboutBodyBG">
+      <div className="aboutBodyBG aboutBodyBGimage">
         <div className="aboutBody pageBody">
           <div ref={about} className= {myAboutIsvisible ? "partHB appearingBgLeft" : 'partHB'}>
             <h1 > Classroom title</h1>
@@ -122,6 +123,7 @@ const InitPage = () => {
           </div>
         </div>
         </div>
+        <div className="separationBarBottom"></div>
       </div>
     )
   };

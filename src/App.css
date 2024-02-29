@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-color: #000000;
 }
 
 .App {
@@ -55,30 +56,12 @@ li {
 }
 
 /*_____Fonts____*/
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(./components/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+h1{
+  font-family: "fooregular", sans-serif;
 }
-
-* {
-  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+p{
+  font-family: "Montserrat", sans-serif;
 }
-
-.title{
-  font-family: myFirstFont !important;
-}
-
-.menus{
-  font-family: myFirstFont !important;
-}
-
-.MuiTreeItem-label{
-  font-family: myFirstFont !important;
-  src: url(./components/fonts/Poppins/Poppins-Regular.otf) !important;
-  font-size: 20px !important;
-}
-
 
 /*___________dropdown menu_____________*/
 
