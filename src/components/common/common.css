@@ -1,41 +1,19 @@
-/*_____BG____*/
-
-.bgHome {
-  background-image: linear-gradient(-60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
-  bottom:0;
-  opacity:.5;
-  position:absolute;
-  width:100vw;
-  right:-100%;
-  top:0;
-  z-index:-1;
-  height:50%;
+/*_____BG____*/ /*_____Anim____*/
+/*
+.appearingImage {
+  left: 0%;
+  animation-duration: 0.5S ;
+  animation-name: image-in;
 
 }
-.bgAbout {
-  background-image: linear-gradient(60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
-  bottom:0;
- 
-  opacity:.5;
-  position:absolute;
-  top:50%;
-  height:50%;
-  right:100%;
-  width:100vw;
-  z-index:-1;
-}
 
-@media only screen and (max-width: 1053px) {
-  .bgHome {
-    background-image: linear-gradient(-40deg, rgb(150, 208, 255) 80%, rgb(255, 255, 255) 80%);
-    width:100%;
+@keyframes image-in {
+  0%{
+    left:125%;
   }
-
-  .bgAbout {
-    background-image: linear-gradient(60deg, rgb(150, 208, 255) 50%, rgb(255, 255, 255) 50%);
-    width:100%;
+  100% {
+    left: 0%;
   }
-
 }
 
 .appearingBgHome {
@@ -72,6 +50,7 @@
     left:0%;
   }
 }
+*/
 /*
 .appearingBgCourses {
   right: 0%;

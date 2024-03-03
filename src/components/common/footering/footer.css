@@ -2,10 +2,11 @@
     z-index:1;
     position: relative;
     justify-content: center;
-    border-top: 1px solid #313d7c;
-    background-color: #313d7c;
+    /*border-top: 2px solid #ffffff;*/
+    background-color: #000000;
     color: #ffffff;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer h3 {

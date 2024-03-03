@@ -65,14 +65,14 @@ const Header = () => {
             </div>
             
             <ul className="menus flexSB center">
-              <li className="buttonHeader" onClick={() => scrollToposition('top')} >Home </li>
-              <li className="buttonHeader" onClick={() => scrollToposition('courses')} >Classes</li>
-              <li className="buttonHeader" onClick={() => scrollToposition('aboutSection')} >About</li>
+              <li className="buttonHeader buttonHome" onClick={() => scrollToposition('top')} >Home </li>
+              <li className="buttonHeader buttonClasses" onClick={() => scrollToposition('courses')} >Classes</li>
+              <li className="buttonHeader buttonAbout" onClick={() => scrollToposition('aboutSection')} >About</li>
             </ul>
 
             <ul className='flexSB rightPart'>
               <li className="buttonLogin" onClick={() => ""}>Login <FaSignInAlt/></li>
-              <li className="buttonLogin" onClick={() => ""}>Register <FaUserPlus/></li>
+              <li className="buttonRegister" onClick={() => ""}>Register <FaUserPlus/></li>
             </ul>
           </nav>
         </header>

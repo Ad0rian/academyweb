@@ -208,22 +208,7 @@
 
 }
 
-/*_____Anim____*/
-.appearingImage {
-  left: 0%;
-  animation-duration: 0.5S ;
-  animation-name: image-in;
 
-}
-
-@keyframes image-in {
-  0%{
-    left:125%;
-  }
-  100% {
-    left: 0%;
-  }
-}
 
 .containerImage {
   background-color: none;
